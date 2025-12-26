@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tiles of Lucca - Dealer Portal</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/x-icon" href="https://luccainteriors.com/cdn/shop/files/favicon_32x32.png">
+</head>
+<body>
+<div class="login-page">
+  <div class="login-left">
+    <div class="login-left-content">
+      <h2>TILES OF LUCCA</h2>
+      <p>Extraordinary Tiles for Your Projects</p>
+    </div>
+  </div>
+  <div class="login-right">
+    <div class="login-container">
+      <div class="login-logo">
+        <img id="brand-logo-img" alt="Tiles of Lucca" class="brand-logo hidden"/>
+        <div id="brand-logo-text" class="logo-text">TILES OF LUCCA</div>
+        <div class="logo-subtitle">Dealer Portal</div>
+      </div>
+      <div class="login-title">Sign In to Your Account</div>
+      <div id="error-message"></div>
+      <form id="login-form">
+        <div class="form-group">
+          <label class="form-label">Username</label>
+          <input type="text" id="username" class="form-input" required placeholder="Enter your username" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input type="password" id="password" class="form-input" required placeholder="Enter your password" />
+        </div>
+        <button type="submit" class="btn btn-full">Sign In</button>
+      </form>
+      <div style="margin-top:30px;text-align:center;font-size:11px;color:var(--gray-500)">
+        <p>Need access? <a href="https://luccainteriors.com/pages/contact" style="color:var(--black)">Contact us</a></p>
+        <p style="margin-top:8px">500 Nordhoff Pl, Ste 6, Englewood, NJ 07631</p>
+        <p>+1 201-340-4823</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="modules/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tiles of Lucca - Admin Panel</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/x-icon" href="https://luccainteriors.com/cdn/shop/files/favicon_32x32.png">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-content">
+    <div class="header-logo" onclick="location.reload()">
+      <img id="brand-logo-img" alt="Tiles of Lucca" class="brand-logo hidden"/>
+      <div>
+        <div id="brand-logo-text" class="header-logo-text">TILES OF LUCCA</div>
+        <div class="header-logo-sub">Admin Panel</div>
+      </div>
+    </div>
+    <div class="header-center">
+      <h1>Dealer Management System</h1>
+    </div>
+    <div class="header-actions">
+      <button class="icon-btn" id="notif-btn" title="Notifications">🔔<span class="badge hidden" id="notif-badge"></span></button>
+      <div class="user-badge">
+        <div class="user-name" id="user-name"></div>
+        <div class="user-meta">Administrator</div>
+      </div>
+      <button class="btn-logout" id="btn-brand">Brand Settings</button>
+      <button class="btn-logout" id="btn-logout">Sign Out</button>
+      <button class="btn-logout" id="btn-back">← Back</button>
+    </div>
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="stats-grid" id="stats-grid"></div>
+  <nav class="tab-nav" id="tab-nav"></nav>
+  <div id="tab-content"></div>
+</main>
+
+<div id="toast-container" class="toast-container"></div>
+<div id="modal-container"></div>
+
+<script type="module" src="modules/adminApp.js"></script>
+</body>
+</html>
